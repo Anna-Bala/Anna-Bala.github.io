@@ -1,0 +1,119 @@
+html {
+  font-size: 25px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+h1,
+h4 {
+  font-family: "Amatic SC", cursive;
+}
+
+h2,
+h4,
+.brown-text {
+  color: #251f1c;
+}
+
+hr {
+  border-top: 0.5px white solid;
+  margin: 0.5rem auto;
+}
+
+.navbar {
+  background-image: linear-gradient(#302c2a, rgba(48, 42, 44, 0));
+}
+
+.big-text {
+  font-size: 3rem;
+}
+
+.bg-brown {
+  background-color: #251f1c;
+}
+
+.bg-lightbrown {
+  background-color: rgba(48, 44, 42, 40);
+  border: 1px white solid;
+  border-radius: 0%;
+  font-size: 0.8rem;
+}
+
+.bg-coffe {
+  background: url(img/coffe.jpg);
+}
+
+.bg-book {
+  background: url(img/books.jpg);
+}
+
+.bg-cake {
+  background: url(img/cake.jpg);
+}
+
+.bg-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: local;
+  background-size: cover;
+  font-size: 1.5rem;
+  font-family: "Amatic SC", cursive;
+}
+
+.bg-main-img {
+  height: 80vh;
+  background: url(img/background3.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.bg-textbrown {
+  background-color: rgba(48, 44, 42, 0.4);
+}
+
+.hr-bolder {
+  border: 1px white solid;
+  width: 70%;
+}
+
+.start-button {
+  display: none;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 30px;
+  z-index: 2;
+  outline: none;
+  background-color: rgba(48, 44, 42, 0.2);
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.start-button:hover {
+  background-color: rgba(48, 44, 42, 0.5);
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    font-size: 35px;
+  }
+
+  .bg-lightbrown {
+    font-size: 1.2rem;
+  }
+}
