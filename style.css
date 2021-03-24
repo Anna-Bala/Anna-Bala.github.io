@@ -45,29 +45,21 @@ hr {
 }
 
 .bg-coffe {
-  background: url(img/coffe.jpg);
+  background: url(img/coffe-small.jpg);
 }
 
 .bg-book {
-  background: url(img/books.jpg);
+  background: url(img/books-small.jpg);
 }
 
 .bg-cake {
-  background: url(img/cake.jpg);
-}
-
-.bg-image {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: local;
-  background-size: cover;
-  font-size: 1.5rem;
-  font-family: "Amatic SC", cursive;
+  background: url(img/cake-small.jpg);
 }
 
 .bg-main-img {
   height: 80vh;
-  background: url(img/background3.jpg) no-repeat center center fixed;
+  width: 100%;
+  background: url(img/background-small.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -102,18 +94,64 @@ hr {
   background-color: rgba(48, 44, 42, 0.5);
 }
 
-@media (min-width: 768px) {
-  body {
-    font-size: 30px;
+@media (min-width: 800px) {
+  .bg-main-img {
+    background: url(img/background-big.jpg) no-repeat center center fixed;
+  }
+  .bg-coffe {
+    background: url(img/coffe-big.jpg);
+  }
+
+  .bg-book {
+    background: url(img/books-big.jpg);
+  }
+
+  .bg-cake {
+    background: url(img/cake-big.jpg);
   }
 }
 
-@media (min-width: 1025px) {
-  body {
-    font-size: 35px;
+@media (min-width: 1024px) {
+  .bg-main-img {
+    background: url(img/background-xbig.jpg) no-repeat top center fixed;
+    height: 60vh;
+  }
+  .bg-coffe {
+    background: url(img/coffe-big.jpg);
   }
 
-  .bg-lightbrown {
-    font-size: 1.2rem;
+  .bg-book {
+    background: url(img/books-big.jpg);
   }
+
+  .bg-cake {
+    background: url(img/cake-big.jpg);
+  }
+}
+
+@media (min-width: 1281px) {
+  .bg-main-img {
+    background: url(img/background-large.jpg) no-repeat center center fixed;
+  }
+
+  .bg-coffe {
+    background: url(img/coffe-xbig.jpg);
+  }
+
+  .bg-book {
+    background: url(img/books-xbig.jpg);
+  }
+
+  .bg-cake {
+    background: url(img/cake-xbig.jpg);
+  }
+}
+
+.bg-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: local;
+  background-size: cover;
+  font-size: 1.5rem;
+  font-family: "Amatic SC", cursive;
 }
