@@ -11,6 +11,18 @@ const scroll = () => {
 }
 
 const goToStart = () => {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  const navbar = document.querySelector('.navbar');
+  navbar.scrollIntoView({behavior: "smooth"});
+}
+
+const controlTitle = () => {
+ const navbarCollapse = document.querySelector('.navbar-collapse');
+ const navbarClassesLength = navbarCollapse.classList.length;
+ const title = document.querySelector('h1');
+ if(navbarClassesLength === 2) {
+   title.innerHTML = '';
+ } else if (navbarClassesLength === 3 ) {
+  title.innerHTML = 'Coffee Nook';
+ }
+ console.log('aha');
 }

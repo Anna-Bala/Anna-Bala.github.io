@@ -1,6 +1,5 @@
 html {
   font-size: 25px;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -27,6 +26,10 @@ hr {
 
 .navbar {
   background-image: linear-gradient(#302c2a, rgba(48, 42, 44, 0));
+}
+
+.navlink {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .big-text {
@@ -60,9 +63,6 @@ hr {
   height: 80vh;
   width: 100%;
   background: url(img/background-small.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   overflow: hidden;
 }
@@ -144,6 +144,18 @@ hr {
 
   .bg-cake {
     background: url(img/cake-xbig.jpg);
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .bg-main-img {
+    height: 150vh;
+  }
+}
+
+@media (min-width: 767px) {
+  .bg-lightbrown {
+    font-size: 1rem;
   }
 }
 
